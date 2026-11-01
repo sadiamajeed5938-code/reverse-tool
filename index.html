@@ -1,0 +1,29 @@
+I built the tool as a single HTML file. It has the same core idea as textreverse.com: type or paste text, pick a mode, and copy the result. It has four modes (reverse text, reverse word order, flip lines, reverse each word's letters), a word and character count, a .txt upload option, and a copy button. It runs entirely in the browser, so it needs no database or server, and it has no ads or captcha. I wrote the text myself rather than copying their content.
+
+## Zero-budget options
+
+**Custom domain:** Truly free custom domains are nearly gone, so on a $0 budget your realistic option is a free subdomain such as `yourname.something.com`. A paid domain usually costs around $10 a year, so only buy one if you can later.
+
+**Option A (simplest, no WordPress): host the tool itself for free.** GitHub Pages or Cloudflare Pages will host a static HTML file for free, with a free subdomain and no card required. Upload `text-reverser.html` as `index.html` and you're live. This is the best choice if you only need the tool.
+
+**Option B (WordPress, free): InfinityFree.** This is the best free WordPress host I found. It has no ads, requires no credit card, and includes one-click WordPress installation through Softaculous. InfinityFree has quietly become the closest functional replacement for the now-defunct 000webhost: free, ad-free, no credit card, and generous resources for a free shared plan. It supports custom domains, but you'll likely use a free subdomain. Its free tier has no automatic backups, so export your WordPress site regularly.
+
+**Alternative: AwardSpace.** It offers free subdomains and an ad-free free plan. Check its current limits before you sign up.
+
+**Avoid for this goal: WordPress.com Free.** It is a quick option, but it has ads and no custom domain, subdomain only.
+
+## Adding the tool to WordPress
+
+1. Install WordPress on InfinityFree using Softaculous.
+2. Create a new page in the WordPress editor.
+3. Add a **Custom HTML** block.
+4. Paste the entire contents of `text-reverser.html`.
+5. Publish the page.
+
+If WordPress strips the scripts, install the free **WPCode** plugin and add the file as a site-wide or page-level HTML snippet. Alternatively, put the file on GitHub Pages and link to it from WordPress. That's often the most reliable setup.
+
+## Things to check
+
+- I couldn't verify the current free-plan limits or whether each host still offers them, so confirm on each provider's site before you sign up.
+- Free hosts can suspend sites that use too many resources or break their rules, so keep a copy of your files.
+- If you later want to add more tools like the original site's list, I can build those too.index.html
